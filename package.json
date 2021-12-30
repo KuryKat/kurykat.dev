@@ -1,0 +1,40 @@
+{
+    "name": "kurykat.dev",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./dist/bin/www",
+    "scripts": {
+        "start": "node .",
+        "buildstart": "yarn build && yarn start",
+        "build": "tsc",
+        "dev": "ts-node-dev ./bin/www",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "helmet": "^4.6.0",
+        "http-errors": "~1.6.3",
+        "less-middleware": "^3.1.0",
+        "morgan": "~1.9.1",
+        "pug": "2.0.0-beta11"
+    },
+    "devDependencies": {
+        "@types/cookie-parser": "^1.4.2",
+        "@types/debug": "^4.1.7",
+        "@types/express": "^4.17.13",
+        "@types/http-errors": "^1.8.1",
+        "@types/less-middleware": "^2.0.32",
+        "@types/morgan": "^1.9.3",
+        "@types/node": "^17.0.5",
+        "@typescript-eslint/eslint-plugin": "^5.8.1",
+        "eslint": "7.12.1",
+        "eslint-config-standard-with-typescript": "^21.0.1",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "4.2.1",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.5.4"
+    }
+}

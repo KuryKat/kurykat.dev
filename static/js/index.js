@@ -1,0 +1,4 @@
+$(() => {
+  twemoji.parse(document)
+})
+

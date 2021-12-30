@@ -1,0 +1,37 @@
+doctype html
+html(lang="en-US")
+  head
+    //- HTML Meta Tags
+    title=(title ? title + " | " : "") + "KuryKat - Web Developer"
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(name="keywords" content=keywords || "dev, webdev, web, developer, webdeveloper, bot, bots, discord, english, português, brasil, usa")
+    meta(name="theme-color" content="#8b0000")
+    meta(name="author" content="KuryKat")
+    meta(name="description" content=description || "Certified Fullstack Web Developer, KuryKat is making the world more connected!")
+    
+    link(rel="icon" href="/img/favicon.ico" type="image/ico")
+
+    //- Facebook Meta Tags
+    meta(property='og:url' content='https://kurykat.dev/')
+    meta(property='og:type' content='website')
+    meta(property='og:title' content=(title ? title + " | " : "") + "KuryKat - Web Developer")
+    meta(property='og:description' content=description || 'Certified Fullstack Web Developer, KuryKat is making the world more connected!')
+    meta(property='og:image' content='/img/favicon.ico')
+    //- Twitter Meta Tags
+    meta(name='twitter:card' content='summary_large_image')
+    meta(property='twitter:domain' content='kurykat.dev')
+    meta(property='twitter:url' content='https://kurykat.dev/')
+    meta(name='twitter:title' content=(title ? title + " | " : "") + "KuryKat - Web Developer")
+    meta(name='twitter:description' content=description || 'Certified Fullstack Web Developer, KuryKat is making the world more connected!')
+    meta(name='twitter:image' content='/img/favicon.ico')
+
+
+    //- CSS IMPORTS
+    link(rel="stylesheet" href="/css/style.css")
+
+    //- JS IMPORTS
+    script(src="/lib/jquery.min.js")
+    block head
+  body
+    block content

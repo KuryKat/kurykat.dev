@@ -1,0 +1,11 @@
+{
+    "server": {
+        "root": "https://kurykat.dev/",
+        "port": 80
+    },
+    "hcaptcha": {
+        "enabled": false,
+        "secret": "secret do hcaptcha",
+        "public": "chave pública do hcaptcha"
+    }
+}
